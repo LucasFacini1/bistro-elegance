@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bistro-elegance/static/css/main.cb479518.css",
+    "main.js": "/bistro-elegance/static/js/main.d15cfe11.js",
+    "index.html": "/bistro-elegance/index.html",
+    "main.cb479518.css.map": "/bistro-elegance/static/css/main.cb479518.css.map",
+    "main.d15cfe11.js.map": "/bistro-elegance/static/js/main.d15cfe11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb479518.css",
+    "static/js/main.d15cfe11.js"
+  ]
+}
