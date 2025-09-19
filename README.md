@@ -1,14 +1,14 @@
 # 🍽️ Bistro Elegance
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Site-green?style=for-the-badge)](https://seuusuario.github.io/bistro-elegance)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Site-green?style=for-the-badge)](https://LucasFacini1.github.io/bistro-elegance)
 [![React](https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-Um sistema de gerenciamento de restaurante moderno e elegante, desenvolvido com React, TypeScript e Tailwind CSS.
+Um sistema de gerenciamento de restaurante moderno e elegante que desenvolvi para demonstrar minhas habilidades em desenvolvimento frontend moderno.
 
 ## 🌐 **Demo ao Vivo**
-**[Ver Site em Funcionamento](https://seuusuario.github.io/bistro-elegance)**
+**[Ver Site em Funcionamento](https://LucasFacini1.github.io/bistro-elegance)**
 
 ## ✨ Características
 
@@ -131,12 +131,12 @@ src/
 - [x] Design responsivo
 - [x] Persistência de dados local
 
-### 🔄 Em Desenvolvimento
-- [ ] Dashboard administrativo
+### 🔄 Melhorias Futuras
 - [ ] Sistema de autenticação
 - [ ] Integração com APIs reais
 - [ ] Sistema de pagamento
 - [ ] Notificações push
+- [ ] PWA (Progressive Web App)
 
 ## 🎨 Paleta de Cores
 
@@ -187,16 +187,22 @@ npx gh-pages -d build
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-## 👨‍💻 Autor
+## 👨‍💻 Sobre o Projeto
 
-Desenvolvido com ❤️ para demonstrar habilidades em desenvolvimento frontend moderno.
+Este projeto foi desenvolvido como uma demonstração das minhas habilidades em desenvolvimento frontend moderno. Utilizei as mais recentes tecnologias e melhores práticas para criar uma experiência de usuário excepcional.
+
+## 🎯 Objetivos
+
+- Demonstrar proficiência em React e TypeScript
+- Mostrar habilidades em design responsivo
+- Implementar animações e micro-interações
+- Criar um sistema completo de gerenciamento
 
 ## 📞 Contato
 
-- **Email**: contato@bistroelegance.com
-- **Telefone**: (11) 3456-7890
-- **Endereço**: Rua das Flores, 123 - Centro, São Paulo - SP
+- **GitHub**: [LucasFacini1](https://github.com/LucasFacini1)
+- **LinkedIn**: [Seu perfil do LinkedIn]
 
 ---
 
-⭐ Se este projeto foi útil para você, considere dar uma estrela!
+⭐ Se gostou do projeto, considere dar uma estrela!
