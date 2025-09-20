@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
           <span className="text-primary-400 font-semibold text-sm uppercase tracking-wide">
             Entre em Contato
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mt-2 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mt-2 mb-6">
             Vamos
             <span className="block text-primary-400">Conversar</span>
           </h2>
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -200,7 +200,7 @@ const Contact: React.FC = () => {
               <p className="text-gray-300 mb-4">
                 Receba nossas novidades e ofertas especiais diretamente no seu email.
               </p>
-              <div className="flex space-x-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
                   placeholder="Seu email"
@@ -212,7 +212,7 @@ const Contact: React.FC = () => {
                   }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+                  className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 w-full sm:w-auto"
                 >
                   Inscrever
                 </motion.button>

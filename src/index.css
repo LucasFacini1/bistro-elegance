@@ -48,11 +48,11 @@
   }
   
   .section-padding {
-    @apply py-16 px-4 sm:px-6 lg:px-8;
+    @apply py-12 sm:py-16 px-4 sm:px-6 lg:px-8;
   }
   
   .container-max {
-    @apply max-w-7xl mx-auto;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
 
@@ -103,4 +103,94 @@ html {
 /* Estilos para focus visible */
 .focus-visible {
   @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+}
+
+/* Melhorias para mobile */
+@media (max-width: 640px) {
+  .container-max {
+    @apply px-4;
+  }
+  
+  .section-padding {
+    @apply py-8 px-4;
+  }
+  
+  /* Garantir que textos não sejam cortados */
+  h1, h2, h3 {
+    @apply leading-tight;
+  }
+  
+  /* Melhorar espaçamento em botões */
+  .btn-primary, .btn-secondary, .btn-outline {
+    @apply py-3 px-4 text-sm;
+  }
+  
+  /* Ajustar tamanhos de ícones para mobile */
+  .w-6.h-6 {
+    @apply w-5 h-5;
+  }
+  
+  .w-8.h-8 {
+    @apply w-7 h-7;
+  }
+  
+  /* Garantir espaço suficiente para o header fixo */
+  #home {
+    @apply pt-24;
+  }
+}
+
+/* Garantir que o header fixo não sobreponha conteúdo */
+header {
+  @apply z-50;
+}
+
+/* Melhorar espaçamento do hero em telas pequenas */
+@media (max-width: 768px) {
+  #home {
+    @apply pt-20;
+  }
+}
+
+/* Espaçamento generoso para desktop */
+@media (min-width: 1024px) {
+  #home {
+    @apply pt-32;
+  }
+  
+  .section-padding {
+    @apply py-20;
+  }
+  
+  .container-max {
+    @apply px-8;
+  }
+  
+  /* Header mais espaçoso no desktop */
+  header {
+    @apply shadow-lg;
+  }
+}
+
+/* Garantir que imagens sejam responsivas */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Melhorar scroll suave em mobile */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Garantir que modais funcionem bem no mobile */
+@media (max-width: 640px) {
+  .fixed.inset-0 {
+    @apply p-4;
+  }
+  
+  .max-w-md {
+    @apply max-w-full;
+  }
 }

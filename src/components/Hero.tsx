@@ -8,7 +8,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 lg:pt-32">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60 z-10" />
@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 container-max text-center text-white">
+      <div className="relative z-20 container-max text-center text-white py-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -43,9 +43,9 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight px-4 pt-4"
           >
-            Bistro
+            <span className="block">Bistro</span>
             <span className="block text-primary-400">Elegance</span>
           </motion.h1>
 
@@ -54,7 +54,7 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed px-4"
           >
             Uma experiência culinária sofisticada que combina tradição e inovação em cada prato cuidadosamente preparado
           </motion.p>
@@ -64,13 +64,13 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12"
+            className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12 px-4"
           >
             <motion.button
               onClick={onReservationClick}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="group bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl"
+              className="group bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl w-full sm:w-auto"
             >
               <span>Fazer Reserva</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -85,7 +85,7 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
               }}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="group border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-4 px-8 rounded-lg transition-all duration-300 flex items-center space-x-2"
+              className="group border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 flex items-center space-x-2 w-full sm:w-auto"
             >
               <span>Ver Cardápio</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -97,9 +97,9 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto px-4"
           >
-            <div className="flex flex-col items-center space-y-2">
+            <div className="flex flex-col items-center space-y-2 text-center">
               <div className="w-12 h-12 bg-primary-600/20 rounded-full flex items-center justify-center">
                 <Clock className="w-6 h-6 text-primary-400" />
               </div>
@@ -107,7 +107,7 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
               <p className="text-gray-300 text-sm">11:30 - 23:00</p>
             </div>
 
-            <div className="flex flex-col items-center space-y-2">
+            <div className="flex flex-col items-center space-y-2 text-center">
               <div className="w-12 h-12 bg-primary-600/20 rounded-full flex items-center justify-center">
                 <Users className="w-6 h-6 text-primary-400" />
               </div>
@@ -115,7 +115,7 @@ const Hero: React.FC<HeroProps> = ({ onReservationClick }) => {
               <p className="text-gray-300 text-sm">Perfeito para ocasiões especiais</p>
             </div>
 
-            <div className="flex flex-col items-center space-y-2">
+            <div className="flex flex-col items-center space-y-2 text-center sm:col-span-2 lg:col-span-1">
               <div className="w-12 h-12 bg-primary-600/20 rounded-full flex items-center justify-center">
                 <Star className="w-6 h-6 text-primary-400" />
               </div>

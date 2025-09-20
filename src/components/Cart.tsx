@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Plus, Minus, ShoppingBag, Trash2, CreditCard } from 'lucide-react';
 import { useCartStore } from '../store/useStore';
-import { CartItem } from '../types';
 
 interface CartProps {
   isOpen: boolean;

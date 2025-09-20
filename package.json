@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Modern restaurant management system with elegant design",
   "private": true,
-  "homepage": "https://seuusuario.github.io/bistro-elegance",
+  "homepage": "https://LucasFacini1.github.io/bistro-elegance",
   "dependencies": {
     "@types/node": "^16.18.0",
     "@types/react": "^18.2.0",

@@ -57,13 +57,13 @@ const Header: React.FC<HeaderProps> = ({ onReservationClick, onCartClick }) => {
       }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md py-2' 
-          : 'bg-white/80 backdrop-blur-sm border-b border-white/30 py-4'
+          ? 'bg-white/95 backdrop-blur-md py-2 h-16' 
+          : 'bg-white/80 backdrop-blur-sm border-b border-white/30 py-4 h-20 lg:h-24'
       } ${isNavigating ? 'ring-2 ring-primary-500/50 ring-opacity-50' : ''}`}
     >
       <div className="container-max">
         <div className={`flex items-center justify-between transition-all duration-500 ${
-          isScrolled ? 'py-2' : 'py-4'
+          isScrolled ? 'py-2' : 'py-4 lg:py-6'
         }`}>
           {/* Logo */}
           <motion.div
@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ onReservationClick, onCartClick }) => {
           >
             <motion.div 
               className={`bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center transition-all duration-500 ${
-                isScrolled ? 'w-8 h-8' : 'w-10 h-10'
+                isScrolled ? 'w-8 h-8' : 'w-10 h-10 sm:w-12 sm:h-12'
               }`}
               animate={{
                 rotate: isScrolled ? 360 : 0,
@@ -84,13 +84,13 @@ const Header: React.FC<HeaderProps> = ({ onReservationClick, onCartClick }) => {
               }}
             >
               <span className={`text-white font-bold transition-all duration-500 ${
-                isScrolled ? 'text-lg' : 'text-xl'
+                isScrolled ? 'text-lg' : 'text-xl sm:text-2xl'
               }`}>B</span>
             </motion.div>
             <div>
               <motion.h1 
                 className={`font-serif font-bold gradient-text transition-all duration-500 ${
-                  isScrolled ? 'text-lg' : 'text-xl'
+                  isScrolled ? 'text-lg' : 'text-lg sm:text-xl'
                 }`}
                 animate={{
                   y: isScrolled ? -2 : 0,

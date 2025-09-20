@@ -55,7 +55,7 @@ const MenuPreview: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-4"
         >
           {categories.map((category) => (
             <motion.button
@@ -63,7 +63,7 @@ const MenuPreview: React.FC = () => {
               onClick={() => setSelectedCategory(category.id)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+              className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
                 selectedCategory === category.id
                   ? 'bg-primary-600 text-white shadow-lg'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -83,7 +83,7 @@ const MenuPreview: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-0"
           >
             {filteredItems.map((item, index) => (
               <motion.div
@@ -126,12 +126,12 @@ const MenuPreview: React.FC = () => {
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl font-serif font-semibold text-gray-900 group-hover:text-primary-600 transition-colors duration-300">
+                    <h3 className="text-lg sm:text-xl font-serif font-semibold text-gray-900 group-hover:text-primary-600 transition-colors duration-300 flex-1 pr-2">
                       {item.name}
                     </h3>
-                    <div className="text-2xl font-bold text-primary-600">
+                    <div className="text-lg sm:text-2xl font-bold text-primary-600 flex-shrink-0">
                       R$ {item.price.toFixed(2)}
                     </div>
                   </div>
@@ -169,7 +169,7 @@ const MenuPreview: React.FC = () => {
                   </div>
 
                   {/* Quantity and Add to Cart */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
                     <div className="flex items-center space-x-3">
                       <button
                         onClick={() => updateQuantity(item.id, -1)}
@@ -193,7 +193,7 @@ const MenuPreview: React.FC = () => {
                       disabled={!quantities[item.id] || quantities[item.id] === 0}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                      className={`flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg font-medium transition-all duration-200 text-sm sm:text-base w-full sm:w-auto justify-center ${
                         quantities[item.id] && quantities[item.id] > 0
                           ? 'bg-primary-600 hover:bg-primary-700 text-white'
                           : 'bg-gray-200 text-gray-400 cursor-not-allowed'
@@ -215,7 +215,7 @@ const MenuPreview: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="text-center mt-12"
+          className="text-center mt-8 sm:mt-12 px-4"
         >
           <motion.button
             onClick={() => {

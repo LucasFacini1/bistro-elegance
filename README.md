@@ -14,10 +14,12 @@ Um sistema de gerenciamento de restaurante moderno e elegante que desenvolvi par
 
 ### 🎨 Design Moderno
 - Interface elegante e sofisticada
-- Design responsivo para todos os dispositivos
+- Design responsivo otimizado para mobile
 - Animações fluidas com Framer Motion
 - Paleta de cores profissional
 - Tipografia refinada com Google Fonts
+- **✨ NOVO**: Melhorias de responsividade mobile
+- **✨ NOVO**: UX otimizada para portfólio
 
 ### 🚀 Funcionalidades Principais
 
@@ -38,6 +40,7 @@ Um sistema de gerenciamento de restaurante moderno e elegante que desenvolvi par
 - Controle de quantidade
 - Instruções especiais
 - Cálculo automático de totais
+- **✨ CORRIGIDO**: Bug de duplicação de botões resolvido
 
 #### 📅 Sistema de Reservas
 - Formulário de reserva completo
@@ -50,6 +53,9 @@ Um sistema de gerenciamento de restaurante moderno e elegante que desenvolvi par
 - Navegação adaptativa
 - Componentes otimizados para touch
 - Performance otimizada
+- **✨ MELHORADO**: Textos não cortados no mobile
+- **✨ MELHORADO**: Espaçamentos otimizados
+- **✨ MELHORADO**: Botões e controles touch-friendly
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -131,6 +137,14 @@ src/
 - [x] Design responsivo
 - [x] Persistência de dados local
 
+### 🔧 Melhorias Recentes (Portfólio)
+- [x] **Correção de bugs**: Removido botão duplicado do carrinho
+- [x] **Responsividade**: Textos não cortados no mobile
+- [x] **UX Mobile**: Botões e controles otimizados para touch
+- [x] **Espaçamento**: Padding e margins ajustados para mobile
+- [x] **Performance**: CSS otimizado para diferentes dispositivos
+- [x] **Acessibilidade**: Melhor contraste e tamanhos de fonte
+
 ### 🔄 Melhorias Futuras
 - [ ] Sistema de autenticação
 - [ ] Integração com APIs reais
@@ -201,7 +215,7 @@ Este projeto foi desenvolvido como uma demonstração das minhas habilidades em 
 ## 📞 Contato
 
 - **GitHub**: [LucasFacini1](https://github.com/LucasFacini1)
-- **LinkedIn**: [Seu perfil do LinkedIn]
+- **LinkedIn**: https://www.linkedin.com/in/lucas-facini-739056328/
 
 ---
 
