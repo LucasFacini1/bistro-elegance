@@ -215,7 +215,7 @@ Este projeto foi desenvolvido como uma demonstração das minhas habilidades em 
 ## 📞 Contato
 
 - **GitHub**: [LucasFacini1](https://github.com/LucasFacini1)
-- **LinkedIn**: https://www.linkedin.com/in/lucas-facini-739056328/
+- **LinkedIn**: [Lucas Facini](https://www.linkedin.com/in/lucas-facini-739056328/)
 
 ---
 
