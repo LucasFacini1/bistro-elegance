@@ -18,8 +18,6 @@ Um sistema de gerenciamento de restaurante moderno e elegante que desenvolvi par
 - Animações fluidas com Framer Motion
 - Paleta de cores profissional
 - Tipografia refinada com Google Fonts
-- **✨ NOVO**: Melhorias de responsividade mobile
-- **✨ NOVO**: UX otimizada para portfólio
 
 ### 🚀 Funcionalidades Principais
 
@@ -40,7 +38,6 @@ Um sistema de gerenciamento de restaurante moderno e elegante que desenvolvi par
 - Controle de quantidade
 - Instruções especiais
 - Cálculo automático de totais
-- **✨ CORRIGIDO**: Bug de duplicação de botões resolvido
 
 #### 📅 Sistema de Reservas
 - Formulário de reserva completo
@@ -53,9 +50,6 @@ Um sistema de gerenciamento de restaurante moderno e elegante que desenvolvi par
 - Navegação adaptativa
 - Componentes otimizados para touch
 - Performance otimizada
-- **✨ MELHORADO**: Textos não cortados no mobile
-- **✨ MELHORADO**: Espaçamentos otimizados
-- **✨ MELHORADO**: Botões e controles touch-friendly
 
 ## 🛠️ Tecnologias Utilizadas
 
